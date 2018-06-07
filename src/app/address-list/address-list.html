@@ -1,0 +1,26 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>address-list</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div class="wr-well">
+    <h1>travel Where you want</h1>
+    <h6>Make sure emergency services can always find you.
+      Select you current location below
+    </h6>
+    <ion-card *ngFor="let address of addresses | async">
+      <ion-item>
+        <ion-icon item-right name="locate" (click)="selectLocation(address)"></ion-icon>
+        <ion-icon item-left large [name]="address.icon"></ion-icon>
+        <strong color="dark">{{address.name}}</strong>
+        <p>{{address}}<br/> Last Selected: {{address.lastUsed}}</p>
+      </ion-item>
+    </ion-card>
+  </div>
+
+</ion-content>
