@@ -1,10 +1,12 @@
 {
   "name": "dispatcher",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "author": "Dash",
+  "homepage": "http://dash.com/",
+  "main": "server/main.js",
   "private": true,
   "scripts": {
+    "start": "electron .",
     "clean": "ionic-app-scripts clean",
     "build": "ionic-app-scripts build",
     "lint": "ionic-app-scripts lint",
