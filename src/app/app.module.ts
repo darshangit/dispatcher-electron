@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { AddressServiceProvider } from './core/address-service/address-service';
 import { HttpClientModule } from '@angular/common/http';
 import { AgmCoreModule } from "@agm/core";
+import { NgxElectronModule } from "ngx-electron";
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AgmCoreModule } from "@agm/core";
     AgmCoreModule.forRoot(),
     BrowserModule,
     HttpClientModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    NgxElectronModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

@@ -11,7 +11,8 @@
     "build": "ionic-app-scripts build",
     "lint": "ionic-app-scripts lint",
     "ionic:build": "ionic-app-scripts build",
-    "ionic:serve": "ionic-app-scripts serve"
+    "ionic:serve": "ionic-app-scripts serve",
+    "mon": "nodemon --exec \"npm start\""
   },
   "dependencies": {
     "@agm/core": "^1.0.0-beta.3",
@@ -30,6 +31,7 @@
     "@ionic/storage": "2.1.3",
     "ionic-angular": "3.9.2",
     "ionicons": "3.0.0",
+    "ngx-electron": "^1.0.4",
     "rxjs": "5.5.11",
     "sw-toolbox": "3.6.0",
     "zone.js": "0.8.26"
@@ -37,6 +39,7 @@
   "devDependencies": {
     "@ionic/app-scripts": "3.1.9",
     "electron": "^2.0.2",
+    "nodemon": "^1.17.5",
     "typescript": "~2.6.2"
   },
   "description": "An Ionic project"
